@@ -18,4 +18,4 @@ O que API_Safra nos retorna quando o token deu erro: vazio
 
 #API_IA
 
-Deve retornar: empresa, quantidade de fontes e sentimento.
+Deve retornar: codigo da empresa e sentimento.
