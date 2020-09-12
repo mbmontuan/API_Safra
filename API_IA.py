@@ -17,7 +17,7 @@ class apiIA():
         url = 'http://localhost:3030/sentimento/data/' + codEmpresa
         payload = {'dataInicio': dataIni, 'dataFim': dataFim}
         r = requests.get(url, data=payload)
-        return r.json()["quantidade"]
+        return r.json()["sentimento"]
 
 codEmpresa = apiIA().getCodEmpresa("Santander")   #se nçao achar a empresa na busca, chatbot deve avisar que nçao encontrou pesquisas sobre a empresa
 print("Codigo da empresa: " + codEmpresa)
